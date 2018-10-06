@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothConnectivity1"
+    android:background="@android:drawable/alert_light_frame"
+    android:id="@+id/R">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Text"
+        android:textStyle="bold"
+        android:layout_below="@+id/turnOn"
+        android:layout_alignLeft="@+id/turnOn"
+        android:layout_alignStart="@+id/turnOn"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="05dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/scan"
+        android:weightSum="1"
+        android:id="@+id/linearLayout2">
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:textFilterEnabled="false"
+            android:layout_weight="0.69"
+            android:layout_marginTop="195dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="05dp"
+        android:layout_marginLeft="05dp"
+        android:background="@drawable/bcs" />
+
+    <Button
+        android:id="@+id/paired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paired"
+        android:layout_gravity="right"
+        android:background="@drawable/paired"
+        android:textColor="@android:color/background_light"
+        android:layout_alignTop="@+id/turnOff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/turnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/on"
+        android:background="@drawable/on"
+        android:textColor="@android:color/background_light"
+        android:padding="05dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/turnOff"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2"
+        />
+
+    <Button
+        android:id="@+id/turnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/off"
+        android:background="@drawable/off"
+        android:textColor="@android:color/background_light"
+        android:padding="05dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageButton2"
+        android:layout_toRightOf="@+id/turnOn"
+        android:layout_toEndOf="@+id/turnOn"
+        android:layout_marginTop="05dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:src="@mipmap/smartlife"
+        android:background="@android:drawable/alert_dark_frame"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/scan"
+        android:layout_alignStart="@+id/scan"
+        android:layout_marginTop="07dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CONNECTIVITY"
+        android:id="@+id/textView6"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton2"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+
